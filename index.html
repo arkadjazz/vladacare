@@ -1,17 +1,10 @@
-<!DOCTYPE html><html lang="en"><head>
+<html lang="en"><head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    
      <title>Vlada Care | Trauma-Informed Psychotherapy</title>
 <meta name="description" content="Trauma-informed, somatic and experiential psychotherapy with Vlada Zapesotsky, PhD. Nervous-system–based care for adults, parents, adolescents, and leaders.">
 
-    
-    
-    
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       window.FontAwesomeConfig = {
@@ -23,672 +16,1127 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <style>
-      ::-webkit-scrollbar {
+      ::-webkit-scrollbar
+      {
         display: none;
       }
 
-      body {
+      body
+      {
         font-family: 'Montserrat', sans-serif;
       }
 
-      .heading-font {
+      .heading-font
+      {
         font-family: 'Cormorant Garamond', serif;
       }
 
-      .watercolor-bg {
+      .watercolor-bg
+      {
         background: linear-gradient(135deg, #fdfcfb 0%, #f7f3ef 25%, #ebe6e0 50%, #f5f0eb 75%, #fdfcfb 100%);
         position: relative;
       }
 
-      .watercolor-overlay {
+      .watercolor-overlay
+      {
         background-image:
           radial-gradient(ellipse at 15% 25%, rgba(216, 191, 177, 0.08) 0%, transparent 60%),
           radial-gradient(ellipse at 85% 65%, rgba(198, 167, 154, 0.06) 0%, transparent 60%),
           radial-gradient(ellipse at 45% 85%, rgba(226, 204, 193, 0.1) 0%, transparent 60%);
       }
 
-      .card-watercolor {
+      .card-watercolor
+      {
         background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(253, 250, 247, 0.95));
         backdrop-filter: blur(20px);
         border: 1px solid rgba(216, 191, 177, 0.15);
       }
 
-      .text-primary-brand {
+      .text-primary-brand
+      {
         color: #8B6F5C;
       }
 
-      .bg-primary-brand {
+      .bg-primary-brand
+      {
         background-color: #8B6F5C;
       }
 
-      .accent-rose {
+      .border-primary-brand
+      {
+        border-color: #C6A793;
+      }
+
+      .accent-rose
+      {
         color: #B8988A;
       }
 
-      .hover-lift {
+      .hover-lift
+      {
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
-      .hover-lift:hover {
+      .hover-lift:hover
+      {
         transform: translateY(-8px);
         box-shadow: 0 20px 60px rgba(139, 111, 92, 0.12);
       }
 
-      .mindful-spacing {
+      .mindful-spacing
+      {
         letter-spacing: 0.02em;
         line-height: 1.8;
       }
 
-      .zen-divider {
+      .zen-divider
+      {
         height: 1px;
         background: linear-gradient(90deg, transparent, rgba(139, 111, 92, 0.3), transparent);
       }
 
-      .luxury-shadow {
+      @keyframes breathe
+      {
+
+        0%,
+        100%
+        {
+          opacity: 0.4;
+          transform: scale(1);
+        }
+
+        50%
+        {
+          opacity: 0.7;
+          transform: scale(1.05);
+        }
+      }
+
+      .breathe-animation
+      {
+        animation: breathe 4s ease-in-out infinite;
+      }
+
+      .luxury-shadow
+      {
         box-shadow: 0 30px 90px rgba(139, 111, 92, 0.08);
       }
 
-      .text-balance {
+      .text-balance
+      {
         text-wrap: balance;
       }
-
-      .gradient-gold {
-        background: linear-gradient(135deg, #D4AF37 0%, #F4E4C1 50%, #D4AF37 100%);
+    </style>
+    <style data-grapesjs-styles="true">
+      *
+      {
+        box-sizing: border-box;
       }
 
-      .gradient-earth {
-        background: linear-gradient(135deg, #8B9A8F 0%, #B5A599 100%);
+      body
+      {
+        margin: 0;
       }
 
-      .price-badge {
-        background: linear-gradient(135deg, rgba(139, 111, 92, 0.1), rgba(198, 167, 154, 0.1));
-        border: 2px solid rgba(139, 111, 92, 0.2);
+      ::-webkit-scrollbar
+      {
+        display: none;
+      }
+
+      body
+      {
+        font-family: Montserrat, sans-serif;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+      }
+
+      .heading-font
+      {
+        font-family: "Cormorant Garamond", serif;
+      }
+
+      .watercolor-bg
+      {
+        background-color: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-image: linear-gradient(135deg, rgb(253, 252, 251) 0%, rgb(247, 243, 239) 25%, rgb(235, 230, 224) 50%, rgb(245, 240, 235) 75%, rgb(253, 252, 251) 100%);
+        background-size: initial;
+        background-origin: initial;
+        background-clip: initial;
+        position: relative;
+      }
+
+      .watercolor-overlay
+      {
+        background-image: radial-gradient(at 15% 25%, rgba(216, 191, 177, 0.08) 0%, transparent 60%), radial-gradient(at 85% 65%, rgba(198, 167, 154, 0.06) 0%, transparent 60%), radial-gradient(at 45% 85%, rgba(226, 204, 193, 0.1) 0%, transparent 60%);
+      }
+
+      .card-watercolor
+      {
+        background-color: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(253, 250, 247, 0.95));
+        background-size: initial;
+        background-origin: initial;
+        background-clip: initial;
+        backdrop-filter: blur(20px);
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: rgba(216, 191, 177, 0.15);
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: rgba(216, 191, 177, 0.15);
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(216, 191, 177, 0.15);
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: rgba(216, 191, 177, 0.15);
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        border-image-slice: initial;
+        border-image-source: initial;
+        border-image-width: initial;
+      }
+
+      .text-primary-brand
+      {
+        color: rgb(139, 111, 92);
+      }
+
+      .bg-primary-brand
+      {
+        background-color: rgb(139, 111, 92);
+      }
+
+      .accent-rose
+      {
+        color: rgb(184, 152, 138);
+      }
+
+      .hover-lift
+      {
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-delay: 0s;
+        transition-behavior: normal;
+      }
+
+      .hover-lift:hover
+      {
+        transform: translateY(-8px);
+        box-shadow: rgba(139, 111, 92, 0.12) 0px 20px 60px;
+      }
+
+      .mindful-spacing
+      {
+        letter-spacing: 0.02em;
+        line-height: 1.8;
+      }
+
+      .zen-divider
+      {
+        height: 1px;
+        background-color: initial;
+        background-position-x: initial;
+        background-position-y: initial;
+        background-repeat: initial;
+        background-attachment: initial;
+        background-image: linear-gradient(90deg, transparent, rgba(139, 111, 92, 0.3), transparent);
+        background-size: initial;
+        background-origin: initial;
+        background-clip: initial;
+      }
+
+      .breathe-animation
+      {
+        animation-name: breathe;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: none;
+        animation-play-state: running;
+      }
+
+      .luxury-shadow
+      {
+        box-shadow: rgba(139, 111, 92, 0.08) 0px 30px 90px;
+      }
+
+      .text-balance
+      {
+        text-wrap-mode: initial;
+        text-wrap-style: balance;
+      }
+
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      #ix62nl
+      {
+        color: rgb(75, 85, 99);
+      }
+
+      #i8a9r1
+      {
+        color: rgb(75, 85, 99);
+      }
+
+      #ijkwwz
+      {
+        color: rgb(75, 85, 99);
+      }
+
+      @keyframes breathe
+      {
+
+        0%,
+        100%
+        {
+          opacity: 0.4;
+          transform: scale(1);
+        }
+
+        50%
+        {
+          opacity: 0.7;
+          transform: scale(1.05);
+        }
       }
     </style>
   </head>
 
   <body class="bg-[#fdfcfb]">
     <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex justify-between items-center">
-        <div class="heading-font text-3xl font-light text-primary-brand tracking-wide">
-          Vlada Zapesotsky
-        </div>
-        <div class="flex items-center space-x-6">
-          <a href="#" class="text-gray-700 hover:text-primary-brand transition font-light">Home</a>
-          <a href="#" class="text-gray-700 hover:text-primary-brand transition font-light">About</a>
-          <a href="#" class="text-primary-brand font-medium">Work With Me</a>
-          <button class="px-8 py-3 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg">
-            Schedule Consultation
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <section id="hero-work" class="watercolor-bg watercolor-overlay relative py-32 lg:py-40">
-      <div class="max-w-7xl mx-auto px-6 lg:px-12">
-        <div class="text-center mb-20">
-          <div class="inline-flex items-center px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full mb-8 border border-primary-brand/20">
-            <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Transformation Begins Here</span>
-          </div>
-          <h1 class="heading-font text-6xl lg:text-7xl font-light text-gray-900 mb-8 text-balance">
-            Work With Me
-          </h1>
-          <div class="zen-divider w-32 mx-auto mb-8"></div>
-          <p class="text-2xl text-gray-600 font-light max-w-4xl mx-auto mindful-spacing">
-            Compassionate, trauma-informed experiential support designed to help you build emotional regulation, stress resilience, somatic awareness, and meaningful post-traumatic growth.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="how-we-work" class="py-32 bg-white">
-  <div class="max-w-6xl mx-auto px-6 lg:px-12">
-    <div class="text-center mb-20">
-      <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8">
-        How We Work Together
-      </h2>
-      <div class="zen-divider w-32 mx-auto mb-8"></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex justify-between items-center">
+    <div class="heading-font text-3xl font-light text-primary-brand tracking-wide">
+      Vlada Zapesotsky
     </div>
-    
-    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-      <div class="relative rounded-3xl overflow-hidden luxury-shadow h-[500px]">
-        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/faa0df1e8a-de2846f468fa2affcb39.png" alt="peaceful therapy session in modern minimalist office, warm natural sunlight through large windows, comfortable neutral-toned furniture, plants, serene atmosphere, professional yet welcoming, photorealistic">
-      </div>
-      
-      <div class="space-y-8">
-        <p class="text-xl text-gray-700 font-light leading-relaxed mindful-spacing">
-          I offer experiential support programs grounded in trauma science, somatic awareness, and present-moment practice. My work blends <span class="font-medium text-primary-brand">psychoeducation</span> (so you understand your nervous system) with guided, <span class="font-medium text-primary-brand">embodied practice</span> (so your system actually changes).
-        </p>
-        <div class="zen-divider w-24"></div>
-        <p class="text-xl text-gray-700 font-light leading-relaxed mindful-spacing">
-          Each session is tailored to your unique life story, personality, and capacity, supporting transformation in how you feel, relate, and lead your life.
-        </p>
-      </div>
+    <nav class="hidden md:flex items-center space-x-12">
+      <a href="#" class="text-gray-600 hover:text-primary-brand transition-colors duration-300 font-light tracking-wide">Home</a>
+      <a href="#" class="text-primary-brand font-semibold tracking-wide">About</a>
+      <a href="#" class="text-gray-600 hover:text-primary-brand transition-colors duration-300 font-light tracking-wide">Work With Me</a>
+    </nav>
+    <div class="flex items-center space-x-6">
+      <button class="px-8 py-3 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 hover:shadow-lg">
+        Schedule Consultation
+      </button>
+      <button class="md:hidden text-primary-brand">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
     </div>
   </div>
-</section>
-
-    <section id="services-programs" class="py-32 watercolor-bg watercolor-overlay">
+</header>
+    <section id="hero-about" class="watercolor-bg watercolor-overlay relative py-32 lg:py-40">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+          <div class="order-2 lg:order-1 space-y-8">
+            <div class="inline-flex items-center px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full border border-primary-brand/20">
+              <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Journey
+                to Wholeness</span></div>
+            <h1 class="heading-font text-5xl lg:text-7xl font-light text-gray-900 leading-[1.15] mindful-spacing">
+              Compassionate Support for<br><span class="accent-rose font-normal italic">Lasting
+                Transformation</span></h1>
+            <div class="space-y-6 py-8">
+              <div class="flex items-start space-x-4 group">
+                <div class="w-12 h-12 rounded-full bg-primary-brand/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary-brand/20 transition-all duration-300">
+                  <i class="fa-solid fa-spa text-primary-brand text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-gray-800 font-medium mb-1">Certified Trauma
+                    Specialist</p>
+                  <p class="text-gray-500 text-sm font-light">Specialized
+                    expertise in healing deep wounds</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4 group">
+                <div class="w-12 h-12 rounded-full bg-primary-brand/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary-brand/20 transition-all duration-300">
+                  <i class="fa-solid fa-lotus text-primary-brand text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-gray-800 font-medium mb-1">Mental Health
+                    Professional</p>
+                  <p class="text-gray-500 text-sm font-light">Holistic approach
+                    to emotional wellbeing</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4 group">
+                <div class="w-12 h-12 rounded-full bg-primary-brand/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary-brand/20 transition-all duration-300">
+                  <i class="fa-solid fa-feather text-primary-brand text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-gray-800 font-medium mb-1">Published Author</p>
+                  <p class="text-gray-500 text-sm font-light">Sharing wisdom
+                    through written word</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4 group">
+                <div class="w-12 h-12 rounded-full bg-primary-brand/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary-brand/20 transition-all duration-300">
+                  <i class="fa-solid fa-hand-holding-heart text-primary-brand text-lg"></i>
+                </div>
+                <div>
+                  <p class="text-gray-800 font-medium mb-1">Somatic &amp;
+                    Experiential Practitioner</p>
+                  <p class="text-gray-500 text-sm font-light">Body-centered
+                    healing practices</p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6">
+              <p class="text-gray-600 text-lg font-light leading-relaxed mindful-spacing italic">
+                "Doctoral-level training in psychology • 16 years of
+                trauma-focused clinical experience • Author of a 2014 book
+                describing my clinical model metaphorically"
+              </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 pt-4"><button class="px-10 py-4 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
+                Explore Services
+              </button><button class="px-10 py-4 bg-white/80 backdrop-blur-sm text-primary-brand border border-primary-brand/30 rounded-full font-light tracking-wide hover:bg-white transition-all duration-300">
+                Schedule Consultation
+              </button></div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="relative">
+              <div class="absolute -inset-8 bg-gradient-to-br from-primary-brand/10 via-transparent to-accent-rose/5 rounded-[3rem] blur-3xl breathe-animation">
+              </div>
+              <div class="relative rounded-[2.5rem] overflow-hidden luxury-shadow border border-white/50">
+                <img src="data:image/webp;base64,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" alt="Professional portrait of a compassionate female therapist" class="w-full h-auto object-cover"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="who-i-am" class="py-32 lg:py-40 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div class="absolute top-20 left-10 w-64 h-64 bg-primary-brand rounded-full blur-3xl">
+        </div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent-rose rounded-full blur-3xl">
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto px-6 lg:px-12 relative z-10">
+        <div class="text-center mb-20">
+          <div class="inline-flex items-center px-5 py-2.5 bg-primary-brand/5 rounded-full mb-8">
+            <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Foundation</span>
+          </div>
+          <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8 text-balance">
+            Who I Am</h2>
+          <div class="zen-divider w-32 mx-auto mb-8"></div>
+          <p class="text-xl text-gray-600 font-light max-w-2xl mx-auto mindful-spacing">
+            A journey of deep presence, authentic connection, and transformative
+            healing
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-10 mb-20">
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-graduation-cap text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Education &amp; Training</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Doctoral-level training in psychology with specialized
+              certification in trauma treatment and somatic practices
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-infinity text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">16+
+              Years Experience</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Over a decade and a half working with trauma, emotional
+              development, and complex clinical presentations
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-book-open text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Published Author</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              2014 book describing clinical model metaphorically, establishing
+              foundation for experiential methodology
+            </p>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-[#f9f6f3] via-white to-[#f7f3ef] rounded-[3rem] p-16 lg:p-20 luxury-shadow border border-primary-brand/10">
+          <div class="max-w-4xl mx-auto space-y-8">
+            <p class="text-gray-700 text-xl font-light leading-relaxed mindful-spacing">
+              I am a mental health professional, Certified Trauma Specialist,
+              and experiential practitioner with doctoral-level training in
+              psychology and over 16 years of experience working with trauma,
+              somatic awareness, emotional development, and complex clinical
+              presentations.
+            </p>
+            <div class="zen-divider w-24"></div>
+            <p class="text-gray-700 text-xl font-light leading-relaxed mindful-spacing">
+              My work integrates trauma science, present-moment experiential
+              practice, and the body–mind connection to help people develop
+              emotional regulation, stress resilience, and post-traumatic
+              growth. In 2014, I authored a book that metaphorically describes
+              the clinical model I developed early in my career—a framework
+              grounded in emotional awareness, narrative understanding, and
+              embodied transformation.
+            </p>
+            <div class="zen-divider w-24"></div>
+            <p class="text-gray-700 text-xl font-light leading-relaxed mindful-spacing italic">
+              That early work became the foundation for the experiential method
+              I use today.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="what-i-offer" class="py-32 lg:py-40 watercolor-bg watercolor-overlay relative">
       <div class="max-w-7xl mx-auto px-6 lg:px-12">
         <div class="text-center mb-20">
           <div class="inline-flex items-center px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full mb-8 border border-primary-brand/20">
-            <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Services &amp; Programs</span>
+            <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Offerings</span>
           </div>
-          <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8">
-            Choose Your Path
-          </h2>
-          <div class="zen-divider w-32 mx-auto mb-8"></div>
-          <p class="text-xl text-gray-600 font-light max-w-3xl mx-auto mindful-spacing">
-            Below are the main ways we can work together. If you're unsure which one is right for you, we can explore it together.
-          </p>
-        </div>
-
-        <div class="grid gap-12 mb-16">
-          <div class="card-watercolor rounded-3xl p-12 hover-lift luxury-shadow">
-            <div class="flex flex-col lg:flex-row gap-10">
-              <div class="flex-shrink-0">
-                <div class="w-24 h-24 bg-gradient-to-br from-[#8B9A8F] to-[#A8B5A5] rounded-3xl flex items-center justify-center luxury-shadow mb-6">
-                  <i class="fa-solid fa-seedling text-white text-4xl"></i>
-                </div>
-                <div class="price-badge rounded-2xl px-6 py-3 inline-block">
-                  <p class="heading-font text-3xl font-light text-primary-brand">$180</p>
-                </div>
-              </div>
-              
-              <div class="flex-1 space-y-6">
-                <h3 class="heading-font text-4xl font-light text-gray-900">
-                  Single 60-Minute Experiential Session
-                </h3>
-                <p class="text-xl text-gray-700 font-light mindful-spacing">
-                  A one-time session for clarity, grounding, and immediate support. We work directly with your nervous system, emotional patterns, or a specific relational or parenting challenge.
-                </p>
-                <p class="text-lg text-gray-600 font-light">
-                  You'll leave with practical embodied tools, deeper insight, and strategies you can apply right away.
-                </p>
-                
-                <div class="bg-white/60 rounded-2xl p-6 border border-primary-brand/10">
-                  <p class="text-sm font-medium text-primary-brand mb-4 tracking-wide uppercase">Best for:</p>
-                  <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>First-time clients</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Immediate support for a challenge</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Grounding and emotional clarity</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Exploring this work before choosing a program</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <button class="px-10 py-4 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
-                  Book a Session
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-12 hover-lift luxury-shadow">
-            <div class="flex flex-col lg:flex-row gap-10">
-              <div class="flex-shrink-0">
-                <div class="w-24 h-24 bg-gradient-to-br from-[#7A9B9E] to-[#9BB5B8] rounded-3xl flex items-center justify-center luxury-shadow mb-6">
-                  <i class="fa-solid fa-leaf text-white text-4xl"></i>
-                </div>
-                <div class="price-badge rounded-2xl px-6 py-3 inline-block">
-                  <p class="heading-font text-3xl font-light text-primary-brand">$900</p>
-                </div>
-              </div>
-              
-              <div class="flex-1 space-y-6">
-                <h3 class="heading-font text-4xl font-light text-gray-900">
-                  6-Week Foundation Experiential Support Program
-                </h3>
-                <p class="text-xl text-gray-700 font-light mindful-spacing">
-                  A short but powerful reset to build emotional stability, somatic awareness, and early nervous system regulation.
-                </p>
-                <p class="text-lg text-gray-600 font-light">
-                  Through weekly sessions, you'll develop core resilience tools, understand your emotional patterns, and begin shifting how you respond to stress and relationships.
-                </p>
-                
-                <div class="bg-white/60 rounded-2xl p-6 border border-primary-brand/10">
-                  <p class="text-sm font-medium text-primary-brand mb-4 tracking-wide uppercase">Best for:</p>
-                  <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Stabilizing after stress or overwhelm</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Beginning trauma-informed growth</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Developing foundational regulation tools</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Working on one focused challenge</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div class="flex flex-wrap gap-4">
-                  <button class="px-10 py-4 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Start 6-Week Support
-                  </button>
-                  <button class="px-10 py-4 bg-white text-primary-brand border border-primary-brand/30 rounded-full font-light tracking-wide hover:bg-white/80 transition-all duration-300">
-                    Schedule a Consultation
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-12 hover-lift luxury-shadow border-2 border-primary-brand/20">
-            <div class="inline-flex items-center px-4 py-2 bg-primary-brand/10 rounded-full mb-6">
-              <span class="text-xs font-medium text-primary-brand tracking-wider uppercase">Popular Choice</span>
-            </div>
-            
-            <div class="flex flex-col lg:flex-row gap-10">
-              <div class="flex-shrink-0">
-                <div class="w-24 h-24 bg-gradient-to-br from-[#B8988A] to-[#C9ADA1] rounded-3xl flex items-center justify-center luxury-shadow mb-6">
-                  <i class="fa-solid fa-spa text-white text-4xl"></i>
-                </div>
-                <div class="price-badge rounded-2xl px-6 py-3 inline-block">
-                  <p class="heading-font text-3xl font-light text-primary-brand">$1,800</p>
-                </div>
-              </div>
-              
-              <div class="flex-1 space-y-6">
-                <h3 class="heading-font text-4xl font-light text-gray-900">
-                  12-Week Trauma Transformation Program
-                </h3>
-                <p class="text-xl text-gray-700 font-light mindful-spacing">
-                  A deeper, more integrative journey for those ready to transform trauma patterns, build emotional regulation, and grow into a more grounded, resilient version of themselves.
-                </p>
-                <p class="text-lg text-gray-600 font-light">
-                  You'll learn practical tools and practice them with guidance, integrating body–mind awareness and relational clarity.
-                </p>
-                
-                <div class="bg-white/60 rounded-2xl p-6 border border-primary-brand/10">
-                  <p class="text-sm font-medium text-primary-brand mb-4 tracking-wide uppercase">Best for:</p>
-                  <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Long-standing patterns</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Deep emotional regulation work</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Post-traumatic growth</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Improving relationships with self and others</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Building somatic capacity</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div class="flex flex-wrap gap-4">
-                  <button class="px-10 py-4 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Begin 12-Week Program
-                  </button>
-                  <button class="px-10 py-4 bg-white text-primary-brand border border-primary-brand/30 rounded-full font-light tracking-wide hover:bg-white/80 transition-all duration-300">
-                    Schedule a Consultation
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-12 hover-lift luxury-shadow">
-            <div class="flex flex-col lg:flex-row gap-10">
-              <div class="flex-shrink-0">
-                <div class="w-24 h-24 bg-gradient-to-br from-[#8B6F5C] to-[#A68575] rounded-3xl flex items-center justify-center luxury-shadow mb-6">
-                  <i class="fa-solid fa-tree text-white text-4xl"></i>
-                </div>
-                <div class="price-badge rounded-2xl px-6 py-3 inline-block">
-                  <p class="heading-font text-3xl font-light text-primary-brand">$3,600</p>
-                </div>
-              </div>
-              
-              <div class="flex-1 space-y-6">
-                <h3 class="heading-font text-4xl font-light text-gray-900">
-                  6-Month Embodied Resilience Growth Program
-                </h3>
-                <p class="text-xl text-gray-700 font-light mindful-spacing">
-                  The most comprehensive container for meaningful, long-term change. Over six months, we focus on deep trauma resolution, nervous system healing, relational transformation, and identity-level growth.
-                </p>
-                <p class="text-lg text-gray-600 font-light">
-                  This program supports slow, steady integration and sustainable shifts in how you feel, connect, and lead your life.
-                </p>
-                
-                <div class="bg-white/60 rounded-2xl p-6 border border-primary-brand/10">
-                  <p class="text-sm font-medium text-primary-brand mb-4 tracking-wide uppercase">Best for:</p>
-                  <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Complex trauma</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Generational and relational healing</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Deep capacity building</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Long-term emotional transformation</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Parents and leaders seeking profound change</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div class="flex flex-wrap gap-4">
-                  <button class="px-10 py-4 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Join 6-Month Program
-                  </button>
-                  <button class="px-10 py-4 bg-white text-primary-brand border border-primary-brand/30 rounded-full font-light tracking-wide hover:bg-white/80 transition-all duration-300">
-                    Schedule a Consultation
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-12 hover-lift luxury-shadow">
-            <div class="flex flex-col lg:flex-row gap-10">
-              <div class="flex-shrink-0">
-                <div class="w-24 h-24 bg-gradient-to-br from-[#A8896D] to-[#BFA18C] rounded-3xl flex items-center justify-center luxury-shadow mb-6">
-                  <i class="fa-solid fa-infinity text-white text-4xl"></i>
-                </div>
-                <div class="price-badge rounded-2xl px-6 py-3 inline-block">
-                  <p class="heading-font text-2xl font-light text-primary-brand">$360 / $540 / $720</p>
-                  <p class="text-xs text-gray-500 mt-1">per month</p>
-                </div>
-              </div>
-              
-              <div class="flex-1 space-y-6">
-                <h3 class="heading-font text-4xl font-light text-gray-900">
-                  Monthly Embodied Resilience Subscription
-                </h3>
-                <p class="text-xl text-gray-700 font-light mindful-spacing">
-                  Consistent monthly support to maintain emotional regulation, integrate tools, and navigate life with steadiness. Choose 2, 3, or 4 sessions per month.
-                </p>
-                
-                <div class="bg-white/60 rounded-2xl p-6 border border-primary-brand/10">
-                  <p class="text-sm font-medium text-primary-brand mb-4 tracking-wide uppercase">Best for:</p>
-                  <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Ongoing support after a program</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Steady nervous system maintenance</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>High-stress seasons</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Accountability and integration</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <button class="px-10 py-4 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
-                  Choose Subscription
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-12 hover-lift luxury-shadow">
-            <div class="flex flex-col lg:flex-row gap-10">
-              <div class="flex-shrink-0">
-                <div class="w-24 h-24 bg-gradient-to-br from-[#9B8A7E] to-[#B5A599] rounded-3xl flex items-center justify-center luxury-shadow mb-6">
-                  <i class="fa-solid fa-hands-holding-child text-white text-4xl"></i>
-                </div>
-                <div class="price-badge rounded-2xl px-6 py-3 inline-block">
-                  <p class="heading-font text-3xl font-light text-primary-brand">$2,000</p>
-                </div>
-              </div>
-              
-              <div class="flex-1 space-y-6">
-                <h3 class="heading-font text-4xl font-light text-gray-900">
-                  8-Session Parent–Child Relationship Transformation Program
-                </h3>
-                <p class="text-xl text-gray-700 font-light mindful-spacing">
-                  A trauma-informed, attachment-based experiential program designed to repair patterns, strengthen attunement, and build emotional connection between you and your child.
-                </p>
-                <p class="text-lg text-gray-600 font-light">
-                  We work with both your nervous system and your child's emotional world, helping you understand, attune, and respond with clarity and compassion.
-                </p>
-                
-                <div class="bg-white/60 rounded-2xl p-6 border border-primary-brand/10">
-                  <p class="text-sm font-medium text-primary-brand mb-4 tracking-wide uppercase">Best for:</p>
-                  <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Parent–child conflict or emotional disconnection</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Strengthening attunement and communication</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Co-regulation skills</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Supporting your child's emotional development</span>
-                    </li>
-                    <li class="flex items-start">
-                      <i class="fa-solid fa-check text-primary-brand mr-3 mt-1"></i>
-                      <span>Breaking intergenerational patterns</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div class="flex flex-wrap gap-4">
-                  <button class="px-10 py-4 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Start Parent–Child Program
-                  </button>
-                  <button class="px-10 py-4 bg-white text-primary-brand border border-primary-brand/30 rounded-full font-light tracking-wide hover:bg-white/80 transition-all duration-300">
-                    Schedule a Consultation
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-gradient-to-br from-[#6B5446] to-[#8B6F5C] rounded-3xl p-16 text-white text-center luxury-shadow">
-          <i class="fa-solid fa-compass text-5xl mb-8 opacity-90"></i>
-          <h3 class="heading-font text-4xl font-light mb-6">Not Sure Which Program to Choose?</h3>
-          <p class="text-xl font-light mb-10 max-w-2xl mx-auto text-gray-50">
-            Let's talk. During a consultation, we'll explore your goals, capacity, and what level of support is right for you.
-          </p>
-          <button class="px-12 py-5 bg-white text-primary-brand rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
-            Schedule a Consultation
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section id="lasting-change" class="py-32 bg-white">
-      <div class="max-w-6xl mx-auto px-6 lg:px-12">
-        <div class="text-center mb-20">
-          <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8">
-            How This Work Creates Lasting Change
-          </h2>
+          <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8 text-balance">
+            What I Offer</h2>
           <div class="zen-divider w-32 mx-auto mb-8"></div>
           <p class="text-2xl text-gray-600 font-light max-w-3xl mx-auto mindful-spacing">
-            This is present-moment, embodied change work that evolves with your life.
+            Compassionate, trauma-informed experiential support for meaningful
+            transformation
           </p>
         </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-wave-pulse text-3xl text-primary-brand"></i>
+        <div class="bg-white/90 backdrop-blur-md rounded-[3rem] luxury-shadow p-16 lg:p-20 mb-16 border border-primary-brand/10">
+          <h3 class="heading-font text-4xl font-light text-gray-900 mb-16 text-center">
+            I Support Individuals Through:</h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#8B9A8F] to-[#A8B5A5] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-seedling text-white text-xl"></i></div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Build
+                  post-traumatic growth</p>
+                <p class="text-gray-500 text-sm font-light">Transform pain into
+                  wisdom</p>
+              </div>
             </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Regulate your nervous system</h4>
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#7A9B9E] to-[#9BB5B8] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-heart-pulse text-white text-xl"></i></div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Develop
+                  somatic awareness</p>
+                <p class="text-gray-500 text-sm font-light">Connect body and
+                  mind</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#B8988A] to-[#C9ADA1] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-balance-scale text-white text-xl"></i>
+              </div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Strengthen
+                  emotional regulation</p>
+                <p class="text-gray-500 text-sm font-light">Find inner
+                  equilibrium</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#8B6F5C] to-[#A68575] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-shield-halved text-white text-xl"></i>
+              </div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Increase
+                  stress resilience</p>
+                <p class="text-gray-500 text-sm font-light">Build adaptive
+                  capacity</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#A8896D] to-[#BFA18C] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-arrows-spin text-white text-xl"></i></div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Transform
+                  relational patterns</p>
+                <p class="text-gray-500 text-sm font-light">Deepen
+                  self-awareness</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#9B8A7E] to-[#B5A599] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-people-arrows text-white text-xl"></i>
+              </div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Heal
+                  parent–child relationships</p>
+                <p class="text-gray-500 text-sm font-light">Attunement and
+                  co-regulation</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#8B9A8F] to-[#A3B2A7] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-child-reaching text-white text-xl"></i>
+              </div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Support
+                  child/adolescent development</p>
+                <p class="text-gray-500 text-sm font-light">Emotional growth
+                  guidance</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#7A8E92] to-[#95A9AD] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-brain text-white text-xl"></i></div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Navigate
+                  complex experiences</p>
+                <p class="text-gray-500 text-sm font-light">ASD, SMI, identity
+                  support</p>
+              </div>
+            </div>
+            <div class="flex items-start space-x-5 group">
+              <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-[#A68D7C] to-[#BBA594] rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-crown text-white text-xl"></i></div>
+              <div>
+                <p class="text-gray-800 font-medium mb-2 text-lg">Build
+                  leadership resilience</p>
+                <p class="text-gray-500 text-sm font-light">Emotional clarity in
+                  leadership</p>
+              </div>
+            </div>
           </div>
-
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-mountain text-3xl text-primary-brand"></i>
+        </div>
+        <div class="card-watercolor rounded-[3rem] p-16 lg:p-20 luxury-shadow">
+          <div class="flex flex-col lg:flex-row items-start space-y-8 lg:space-y-0 lg:space-x-10">
+            <div class="flex-shrink-0">
+              <div class="w-28 h-28 bg-gradient-to-br from-primary-brand to-[#A68575] rounded-3xl flex items-center justify-center luxury-shadow">
+                <i class="fa-solid fa-lightbulb text-white text-5xl"></i></div>
             </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Increase stress resilience</h4>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-heart-pulse text-3xl text-primary-brand"></i>
+            <div class="flex-1">
+              <h3 class="heading-font text-4xl font-light text-gray-900 mb-8">My
+                Integrated Approach</h3>
+              <p class="text-gray-700 text-xl font-light leading-relaxed mindful-spacing">
+                My approach blends <span class="font-medium text-primary-brand">psychoeducation</span>
+                (so you understand what's happening) with <span class="font-medium text-primary-brand">embodied
+                  practice</span> (so your nervous system actually learns
+                something new). Together, these create the capacity for
+                meaningful, lasting change.
+              </p>
             </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Build somatic awareness</h4>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-lightbulb text-3xl text-primary-brand"></i>
-            </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Strengthen emotional clarity</h4>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-heart-circle-bolt text-3xl text-primary-brand"></i>
-            </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Transform trauma patterns</h4>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-people-arrows text-3xl text-primary-brand"></i>
-            </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Deepen relational attunement</h4>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-hands-holding-child text-3xl text-primary-brand"></i>
-            </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Repair parent–child dynamics</h4>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-brain text-3xl text-primary-brand"></i>
-            </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Support ASD + SMI with grounding</h4>
-          </div>
-
-          <div class="card-watercolor rounded-3xl p-10 hover-lift">
-            <div class="w-16 h-16 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-6">
-              <i class="fa-solid fa-infinity text-3xl text-primary-brand"></i>
-            </div>
-            <h4 class="heading-font text-2xl font-light text-gray-900 mb-4">Build lifelong emotional resilience</h4>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="final-cta" class="py-32 watercolor-bg watercolor-overlay">
+    <section id="specializations" class="py-32 lg:py-40 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-20">
+          <div class="inline-flex items-center px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full mb-8 border border-primary-brand/20">
+            <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Specializations</span>
+          </div>
+          <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8 text-balance">
+            My Background &amp; Specializations</h2>
+          <div class="zen-divider w-32 mx-auto mb-8"></div>
+          <p class="text-2xl text-gray-600 font-light max-w-3xl mx-auto mindful-spacing">
+            Deep expertise across diverse therapeutic domains
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-heart-crack text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Complex Trauma</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Complex trauma and emotional overwhelm treatment
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-wave-pulse text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Nervous System Healing</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Nervous system healing and somatic awareness
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-arrow-trend-up text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Post-Traumatic Growth</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Post-traumatic growth and embodied resilience
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-children text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Child &amp; Adolescent</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Child and adolescent mental health development
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-puzzle-piece text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">ASD
+              Support</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              ASD and diverse neurodevelopmental profiles
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-hospital text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">SMI
+              Expertise</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Severe Mental Illness with focus on regulation
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-hands-holding-child text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Parent-Child Repair</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Parent–child relationship repair and attachment
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-user-tie text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Leadership Support</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Leadership emotional intelligence and stress regulation
+            </p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+            <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-hand-holding-heart text-4xl text-primary-brand"></i>
+            </div>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+              Experiential Work</h3>
+            <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+              Present-moment experiential work for capacity building
+            </p>
+          </div>
+        </div>
+        <div class="mt-16 bg-gradient-to-br from-primary-brand to-[#A68575] rounded-[3rem] p-16 lg:p-20 text-white">
+          <div class="max-w-4xl mx-auto space-y-8">
+            <div class="flex items-center mb-6"><i class="fa-solid fa-quote-left text-4xl opacity-50 mr-4"></i>
+              <h3 class="heading-font text-4xl font-light">Core Philosophy</h3>
+            </div>
+            <p class="text-2xl font-light leading-relaxed mindful-spacing">
+              Across all populations, my work remains rooted in compassion,
+              nervous system safety, relational attunement, and the belief that
+              transformation happens when people feel supported enough to
+              experience themselves differently in the present moment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="approach" class="py-32 lg:py-40 watercolor-bg watercolor-overlay relative">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-20">
+          <div class="inline-flex items-center px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full mb-8 border border-primary-brand/20">
+            <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Approach</span>
+          </div>
+          <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8 text-balance">
+            My Approach: Experiential, Somatic, Trauma-Informed</h2>
+          <div class="zen-divider w-32 mx-auto mb-8"></div>
+          <p class="text-2xl text-gray-600 font-light max-w-3xl mx-auto mindful-spacing">
+            Grounded in core principles that create lasting transformation
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-10 mb-20">
+          <div class="lg:col-span-2 grid lg:grid-cols-2 gap-10">
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-clock-rotate-left text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Present-Moment Healing</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                We focus on what your nervous system is experiencing right now,
+                not on endlessly analyzing the past.
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-hand-holding-medical text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Somatic + Body–Mind Integration</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Emotional patterns live in the body. We work with breath,
+                sensation, grounding, and embodied awareness to create real
+                transformation.
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-book-open-reader text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Psychoeducation + Practice</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                I teach you the tools—and we practice them together—so your
+                nervous system learns new pathways and capacities for life.
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-chart-line text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Capacity Building for Lasting Change</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                We develop emotional, relational, and somatic resources that
+                strengthen your resilience far beyond our work together.
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-shield-heart text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Trauma-Informed Compassion</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Safety, respect, attunement, and choice guide every session.
+              </p>
+            </div>
+          </div>
+          <div class="relative rounded-3xl overflow-hidden luxury-shadow h-full min-h-[600px]">
+            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6d2617b164-163fd769161bf4a053e4.png" alt="serene mindfulness meditation space with soft natural lighting, warm earth tones, peaceful atmosphere, comfortable cushions, plants, gentle watercolor style" class="w-full h-full object-cover"></div>
+        </div>
+      </div>
+    </section>
+    <section id="who-i-support" class="py-32 lg:py-40 bg-white">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-20">
+          <div class="inline-flex items-center px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full mb-8 border border-primary-brand/20">
+            <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Support</span>
+          </div>
+          <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8 text-balance">
+            Who I Support</h2>
+          <div class="zen-divider w-32 mx-auto mb-8"></div>
+          <p class="text-2xl text-gray-600 font-light max-w-3xl mx-auto mindful-spacing">
+            Highly individualized support tailored to each person's unique
+            personality, nervous system, and life story
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-10 mb-20">
+          <div class="lg:col-span-2 grid md:grid-cols-2 gap-10">
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-user text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Adults</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Seeking emotional regulation, clarity, and self-leadership
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-users text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Parents</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Wanting to understand, attune, and repair relationships with
+                their children
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-person text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Adolescents</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Navigating emotional development and self-discovery
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-heart-circle-bolt text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Trauma Survivors</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Individuals living with complex trauma or long-standing patterns
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-face-frown text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Those Experiencing Overwhelm</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                People experiencing stress, overwhelm, or relational
+                difficulties
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-brain text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Neurodivergent Clients</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Including those on the autism spectrum (ASD)
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-hospital-user text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                SMI Clients</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Navigating Severe Mental Illness with support for grounding and
+                relationship functioning
+              </p>
+            </div>
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                <i class="fa-solid fa-briefcase text-4xl text-primary-brand"></i>
+              </div>
+              <h3 class="heading-font text-3xl font-light text-gray-900 mb-6">
+                Leaders</h3>
+              <p class="text-gray-600 leading-relaxed font-light mindful-spacing">
+                Seeking emotional resilience, stability, and relational skills
+              </p>
+            </div>
+          </div>
+          <div class="relative rounded-3xl overflow-hidden luxury-shadow h-full min-h-[600px]">
+            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3e4490a5d1-649dd3ab9d878d9558a9.png" alt="Diverse group of people in supportive circle, warm compassionate atmosphere, soft natural lighting, watercolor style, inclusive and welcoming, gentle earth tones" class="w-full h-full object-cover"></div>
+        </div>
+      </div>
+    </section>
+    <section id="what-to-expect" class="py-32 lg:py-40 watercolor-bg watercolor-overlay relative">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="text-center mb-20">
+          <div class="inline-flex items-center px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full mb-8 border border-primary-brand/20">
+            <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Expectations</span>
+          </div>
+          <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-8 text-balance">
+            What You Can Expect</h2>
+          <div class="zen-divider w-32 mx-auto mb-8"></div>
+          <p class="text-2xl text-gray-600 font-light max-w-3xl mx-auto mindful-spacing">
+            Learn how to create lasting internal change, not just temporary
+            relief
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-10 mb-20">
+          <div class="relative rounded-3xl overflow-hidden luxury-shadow h-full min-h-[600px]">
+            <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fa13f42f57-76c435955f0315b5fe6a.png" alt="Person journaling peacefully in natural setting, soft morning light, watercolor style, calm and reflective mood, warm earth tones, healing journey concept" class="w-full h-full object-cover"></div>
+          <div class="lg:col-span-2">
+            <div class="card-watercolor rounded-3xl p-12 hover-lift group">
+              <h3 class="heading-font text-4xl font-light text-gray-900 mb-16 text-center">
+                In working with me, you'll learn how to:</h3>
+              <div class="grid md:grid-cols-2 gap-10">
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-wave-square text-white text-3xl"></i>
+                  </div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Regulate Your Nervous System</h4>
+                  <p class="text-gray-600">Build capacity for self-regulation
+                    and emotional balance</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-temperature-low text-white text-3xl"></i>
+                  </div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Reduce Emotional Reactivity</h4>
+                  <p class="text-gray-600">Develop pause and choice in emotional
+                    responses</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-expand text-white text-3xl"></i></div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Expand Your Capacity</h4>
+                  <p class="text-gray-600">Increase ability to feel and respond
+                    with awareness</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-heart-circle-plus text-white text-3xl"></i>
+                  </div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Heal Trauma Patterns</h4>
+                  <p class="text-gray-600">Transform patterns that shape your
+                    relationships</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-mountain text-white text-3xl"></i>
+                  </div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Build Stress Resilience</h4>
+                  <p class="text-gray-600">Strengthen your capacity to navigate
+                    challenges</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-person-rays text-white text-3xl"></i>
+                  </div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Develop Somatic Awareness</h4>
+                  <p class="text-gray-600">Deepen connection with your body's
+                    wisdom</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-hand-holding-heart text-white text-3xl"></i>
+                  </div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Strengthen Self-Relationship</h4>
+                  <p class="text-gray-600">Build compassionate connection with
+                    yourself</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-people-group text-white text-3xl"></i>
+                  </div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Transform Relationships</h4>
+                  <p class="text-gray-600">Show up differently with the people
+                    you love</p>
+                </div>
+                <div class="flex flex-col items-center text-center md:col-span-2">
+                  <div class="w-20 h-20 bg-gradient-to-br from-primary-brand/10 to-primary-brand/5 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-spa text-white text-3xl"></i></div>
+                  <h4 class="heading-font text-3xl font-light text-gray-900 mb-3">
+                    Experience More Presence</h4>
+                  <p class="text-gray-600">Cultivate groundedness and emotional
+                    clarity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-primary-brand to-[#A68575] rounded-[3rem] p-16 lg:p-20 text-white text-center">
+          <div id="ijkwwz" class="max-w-4xl mx-auto space-y-8"><i class="fa-solid fa-bullseye text-5xl mb-6 opacity-80"></i>
+            <h3 id="ix62nl" class="heading-font text-4xl font-light mb-6">My
+              Goal</h3>
+            <p id="i8a9r1" class="text-2xl font-light leading-relaxed max-w-4xl mx-auto">
+              My goal is to support you in creating lasting internal change, not
+              just temporary relief.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta-next-steps" class="py-32 lg:py-40 bg-white">
       <div class="max-w-5xl mx-auto px-6 lg:px-12 text-center">
-        <div class="inline-flex items-center px-5 py-2.5 bg-white/60 backdrop-blur-sm rounded-full mb-8 border border-primary-brand/20">
-          <span class="text-xs font-light text-primary-brand tracking-[0.2em] uppercase">Begin Your Journey</span>
-        </div>
-        
         <h2 class="heading-font text-5xl lg:text-6xl font-light text-gray-900 mb-12">
-          Ready to Transform?
-        </h2>
-        
-        <p class="text-2xl text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed font-light mindful-spacing">
-          Take the first step toward lasting change. Schedule a consultation to explore which path is right for you.
+          Ready to Begin?</h2>
+        <p class="text-2xl text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed">
+          If you're ready to begin this work, explore my services to see which
+          program feels aligned with your needs.
         </p>
-        
-        <div class="flex flex-col sm:flex-row gap-8 justify-center items-center">
-          <button class="px-14 py-6 bg-primary-brand text-white rounded-full font-light text-lg tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
+        <div class="flex flex-col sm:flex-row gap-8 justify-center items-center mb-16">
+          <button class="px-12 py-6 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl">
             Schedule a Consultation
-          </button>
-          <button class="px-14 py-6 bg-white/80 backdrop-blur-sm text-primary-brand border-2 border-primary-brand/30 rounded-full font-light text-lg tracking-wide hover:bg-white transition-all duration-300">
-            Learn More About Services
-          </button>
+          </button><button class="px-12 py-6 bg-white/80 backdrop-blur-sm text-primary-brand border border-primary-brand/30 rounded-full font-light tracking-wide hover:bg-white transition-all duration-300">
+            Explore Services
+          </button></div>
+        <div class="grid md:grid-cols-3 gap-8 mt-20">
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group"><i class="fa-solid fa-calendar-check text-4xl text-primary-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-3">Book
+              a Session</h3>
+            <p class="text-gray-600">Schedule your first consultation</p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group"><i class="fa-solid fa-envelope text-4xl text-primary-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-3">Get
+              in Touch</h3>
+            <p class="text-gray-600">Reach out with any questions</p>
+          </div>
+          <div class="card-watercolor rounded-3xl p-12 hover-lift group"><i class="fa-solid fa-book-open text-4xl text-primary-brand mb-6 group-hover:scale-110 transition-transform duration-300"></i>
+            <h3 class="heading-font text-3xl font-light text-gray-900 mb-3">
+              Learn More</h3>
+            <p class="text-gray-600">Explore resources and approach</p>
+          </div>
         </div>
       </div>
     </section>
-
     <footer id="footer" class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 py-20 relative overflow-hidden">
       <div class="absolute inset-0 opacity-5">
-        <div class="absolute top-0 left-0 w-96 h-96 bg-primary-brand rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent-rose rounded-full blur-3xl"></div>
+        <div class="absolute top-0 left-0 w-96 h-96 bg-primary-brand rounded-full blur-3xl">
+        </div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-accent-rose rounded-full blur-3xl">
+        </div>
       </div>
       <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         <div class="grid md:grid-cols-4 gap-16 mb-16">
           <div class="md:col-span-2">
-            <h3 class="heading-font text-4xl font-light text-white mb-6">Vlada Zapesotsky</h3>
+            <h3 class="heading-font text-4xl font-light text-white mb-6">Vlada
+              Zapesotsky</h3>
             <p class="text-gray-400 mb-8 leading-relaxed font-light mindful-spacing">
-              Certified Trauma Specialist providing compassionate, trauma-informed experiential support for lasting transformation.
+              Certified Trauma Specialist providing compassionate,
+              trauma-informed experiential support for lasting transformation.
             </p>
-            <div class="flex space-x-4">
-              <a href="#" class="w-12 h-12 bg-gray-800/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary-brand transition-all duration-300 hover:scale-110">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
+            <div class="flex space-x-4"><a href="#" class="w-12 h-12 bg-gray-800/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary-brand transition-all duration-300 hover:scale-110"><i class="fa-brands fa-linkedin"></i></a></div>
           </div>
           <div>
-            <h4 class="heading-font text-xl font-light text-white mb-6">Quick Links</h4>
+            <h4 class="heading-font text-xl font-light text-white mb-6">Quick
+              Links</h4>
             <ul class="space-y-4">
-              <li><a href="#" class="hover:text-primary-brand transition font-light">Home</a></li>
-              <li><a href="#" class="hover:text-primary-brand transition font-light">About</a></li>
-              <li><a href="#" class="hover:text-primary-brand transition font-light">Work With Me</a></li>
-              <li><a href="#" class="hover:text-primary-brand transition font-light">Resources</a></li>
+              <li><a href="#" class="hover:text-primary-brand transition font-light">Home</a>
+              </li>
+              <li><a href="#" class="hover:text-primary-brand transition font-light">About</a>
+              </li>
+              <li><a href="#" class="hover:text-primary-brand transition font-light">Services</a>
+              </li>
+              <li><a href="#" class="hover:text-primary-brand transition font-light">Approach</a>
+              </li>
+              <li><a href="#" class="hover:text-primary-brand transition font-light">Resources</a>
+              </li>
             </ul>
           </div>
           <div>
-            <h4 class="heading-font text-xl font-light text-white mb-6">Contact</h4>
+            <h4 class="heading-font text-xl font-light text-white mb-6">Contact
+            </h4>
             <ul class="space-y-4 font-light">
-              <li class="flex items-start">
-                <i class="fa-solid fa-envelope text-primary-brand mr-3 mt-1"></i>
-                <span>vladlenad@gmail.com</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fa-solid fa-phone text-primary-brand mr-3 mt-1"></i>
-                <span>(408) 431-5784</span>
-              </li>
-              <li class="flex items-start">
-                <i class="fa-solid fa-location-dot text-primary-brand mr-3 mt-1"></i>
-                <span>Virtual Sessions Available</span>
-              </li>
+              <li class="flex items-start"><i class="fa-solid fa-envelope text-primary-brand mr-3 mt-1"></i><span id="itpnww">vladlenad@gmail.com</span></li>
+              <li class="flex items-start"><i class="fa-solid fa-phone text-primary-brand mr-3 mt-1"></i><span id="ib42b2">(408) 431-5784</span></li>
+              <li class="flex items-start"><i class="fa-solid fa-location-dot text-primary-brand mr-3 mt-1"></i><span>Virtual
+                  Sessions Available</span></li>
             </ul>
           </div>
         </div>
         <div class="border-t border-gray-800 pt-10 flex flex-col md:flex-row justify-between items-center">
-          <p class="text-gray-500 text-sm font-light mb-4 md:mb-0">© 2024 Vlada Zapesotsky. All rights reserved.</p>
+          <p class="text-gray-500 text-sm font-light mb-4 md:mb-0">© 2024 Vlada
+            Zapesotsky. All rights reserved.</p>
+          <div class="flex space-x-8 text-sm font-light"></div>
         </div>
       </div>
     </footer>
