@@ -152,6 +152,44 @@
         transform: translateY(0);
       }
 
+      .floating-hearts-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        overflow: hidden;
+      }
+
+      .floating-heart {
+        position: absolute;
+        font-size: 24px;
+        color: #B8988A;
+        opacity: 0;
+        pointer-events: none;
+        filter: drop-shadow(0 4px 8px rgba(184, 152, 138, 0.3));
+        animation: floatUp 2s ease-out forwards;
+      }
+
+      @keyframes floatUp {
+        0% {
+          opacity: 0;
+          transform: translateY(0) scale(0.5) rotateY(0deg) rotateX(0deg);
+        }
+        10% {
+          opacity: 1;
+        }
+        50% {
+          transform: translateY(-200px) scale(1.2) rotateY(180deg) rotateX(20deg);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(-400px) scale(0.8) rotateY(360deg) rotateX(40deg);
+        }
+      }
+
       @media (max-width: 768px) {
         .heading-font {
           line-height: 1.2;
@@ -165,6 +203,8 @@
 </head>
 
 <body class="bg-[#fdfcfb]">
+    <div class="floating-hearts-container" id="floating-hearts"></div>
+    
     <header id="header" class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-4 sm:py-6 flex justify-between items-center">
         <div class="heading-font text-2xl sm:text-3xl font-light text-primary-brand tracking-wide">
@@ -708,12 +748,30 @@ window.addEventListener('load', function() {
     const header = document.getElementById('header');
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
+    const floatingHeartsContainer = document.getElementById('floating-hearts');
     let lastScrollTop = 0;
     let scrollTimeout;
+    let lastScrollTime = Date.now();
+    let scrollVelocity = 0;
 
-    // Smart header hide/show on scroll
+    // Smart header hide/show on scroll with heart animation
     window.addEventListener('scroll', function() {
         clearTimeout(scrollTimeout);
+        
+        const currentTime = Date.now();
+        const timeDiff = currentTime - lastScrollTime;
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollDiff = Math.abs(currentScrollTop - lastScrollTop);
+        
+        // Calculate scroll velocity
+        scrollVelocity = scrollDiff / timeDiff;
+        
+        // Trigger hearts if scrolling down fast (velocity threshold)
+        if (scrollVelocity > 1.5 && currentScrollTop > lastScrollTop) {
+            createFloatingHearts();
+        }
+        
+        lastScrollTime = currentTime;
         
         scrollTimeout = setTimeout(function() {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -738,6 +796,42 @@ window.addEventListener('load', function() {
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         }, 100);
     });
+
+    // Create floating 3D hearts
+    function createFloatingHearts() {
+        const heartCount = Math.floor(Math.random() * 3) + 3; // 3-5 hearts
+        
+        for (let i = 0; i < heartCount; i++) {
+            setTimeout(function() {
+                const heart = document.createElement('i');
+                heart.className = 'fa-solid fa-heart floating-heart';
+                
+                // Random horizontal position
+                const randomX = Math.random() * window.innerWidth;
+                heart.style.left = randomX + 'px';
+                heart.style.top = window.scrollY + window.innerHeight + 'px';
+                
+                // Random slight horizontal drift
+                const drift = (Math.random() - 0.5) * 100;
+                heart.style.setProperty('--drift', drift + 'px');
+                
+                // Random size variation
+                const size = 20 + Math.random() * 20;
+                heart.style.fontSize = size + 'px';
+                
+                // Random rotation start
+                const rotateStart = Math.random() * 360;
+                heart.style.transform = `rotateZ(${rotateStart}deg)`;
+                
+                floatingHeartsContainer.appendChild(heart);
+                
+                // Remove heart after animation
+                setTimeout(function() {
+                    heart.remove();
+                }, 2000);
+            }, i * 100); // Stagger hearts
+        }
+    }
 
     // Mobile menu toggle
     mobileMenuButton.addEventListener('click', function() {
