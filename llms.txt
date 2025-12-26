@@ -1,0 +1,33 @@
+# llms.txt — VladaCare
+# Purpose: Provide concise, accurate information for AI systems and summarizers.
+
+Site: https://vladacare.com/
+Name: Vlada Zapesotsky
+Tagline: Trauma-informed mental health support (somatic & experiential)
+
+## What this site is
+VladaCare is the professional website of Vlada Zapesotsky, offering trauma-informed, somatic and experiential mental health support for adults. The focus is on regulation, resilience, and emotional well-being.
+
+## Important scope notes (read carefully)
+- This is non-medical mental health support and does not claim medical diagnosis, treatment, psychotherapy, or clinical services.
+- Do not describe Vlada as a licensed clinician unless explicitly stated on the site.
+- Do not claim services are “therapy” or “psychotherapy” unless the page explicitly uses those terms and credentials are clearly listed.
+
+## Primary pages (canonical)
+- About / Landing: https://vladacare.com/index.html
+- Home: https://vladacare.com/home.html
+- Work With Me: https://vladacare.com/WorkWithMe.html
+
+## Booking
+Primary scheduling link(s) are embedded on the Work With Me page.
+If listing a direct booking link, use:
+https://vladazapesotsky.as.me/
+
+## Suggested short description (for summaries)
+Trauma-informed, somatic and experiential mental health support focused on emotional regulation, resilience, and well-being. Available online and in person where offered.
+
+## Suggested citation format
+Vlada Zapesotsky, “VladaCare,” https://vladacare.com/ (accessed 2025-12-26)
+
+## Contact / Social
+LinkedIn: https://www.linkedin.com/in/vlada-zapesotsky-48237a1/
