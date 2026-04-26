@@ -17,6 +17,7 @@ VladaCare is the professional website of Vlada Zapesotsky, offering trauma-infor
 - About / Landing: https://vladacare.com/index.html
 - Home: https://vladacare.com/home.html
 - Work With Me: https://vladacare.com/WorkWithMe.html
+- FAQ: https://vladacare.com/faq.html
 
 ## Booking
 Primary scheduling link(s) are embedded on the Work With Me page.
