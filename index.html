@@ -1208,6 +1208,25 @@
         </div>
       </div>
     </section>
+    <section id="newsletter-about" class="py-20 lg:py-28 watercolor-bg watercolor-overlay">
+      <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+        <h2 class="heading-font text-4xl lg:text-5xl font-light text-gray-900 mb-6">
+          Stay Connected
+        </h2>
+        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Sign up for occasional reflections.
+        </p>
+        <form class="newsletter-form max-w-2xl mx-auto" action="https://formspree.io/f/xeevwglb" method="POST">
+          <input type="hidden" name="_subject" value="VladaCare newsletter signup">
+          <input type="hidden" name="source" value="About page">
+          <div class="flex flex-col sm:flex-row gap-3">
+            <input name="email" type="email" required autocomplete="email" placeholder="Email address" class="w-full rounded-full bg-white/80 border border-primary-brand/20 px-6 py-4 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-brand/40 focus:border-primary-brand/40 transition">
+            <button type="submit" class="px-8 py-4 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap shadow-lg hover:shadow-xl">Sign Up</button>
+          </div>
+          <p class="newsletter-status hidden text-sm text-gray-500 mt-3"></p>
+        </form>
+      </div>
+    </section>
     <footer id="footer" class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 py-20 relative overflow-hidden">
       <div class="absolute inset-0 opacity-5">
         <div class="absolute top-0 left-0 w-96 h-96 bg-primary-brand rounded-full blur-3xl">
@@ -1224,6 +1243,16 @@
               Certified Trauma Specialist providing compassionate,
               trauma-informed experiential support for lasting transformation.
             </p>
+<form class="newsletter-form max-w-md mb-8" action="https://formspree.io/f/xeevwglb" method="POST">
+  <input type="hidden" name="_subject" value="VladaCare newsletter signup">
+  <input type="hidden" name="source" value="About footer">
+  <label class="block text-sm text-gray-300 mb-3">Sign up for occasional reflections.</label>
+  <div class="flex flex-col sm:flex-row gap-3">
+    <input name="email" type="email" required autocomplete="email" placeholder="Email address" class="w-full rounded-full bg-white/10 border border-white/10 px-5 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-brand/50 focus:border-primary-brand/40 transition">
+    <button type="submit" class="px-6 py-3 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">Sign Up</button>
+  </div>
+  <p class="newsletter-status hidden text-sm text-gray-400 mt-3"></p>
+</form>
 <div class="flex space-x-4">
   <a
     href="https://www.linkedin.com/in/vlada-zapesotsky-48237a1/"
@@ -1268,5 +1297,38 @@
       </div>
     </footer>
   
+    <script>
+      document.querySelectorAll('.newsletter-form').forEach(function(form) {
+        form.addEventListener('submit', async function(event) {
+          event.preventDefault();
+          const status = form.querySelector('.newsletter-status');
+          const button = form.querySelector('button[type="submit"]');
+          status.classList.remove('hidden');
+          status.textContent = 'Sending...';
+          button.disabled = true;
+          button.classList.add('opacity-70', 'cursor-not-allowed');
+
+          try {
+            const response = await fetch(form.action, {
+              method: 'POST',
+              body: new FormData(form),
+              headers: { Accept: 'application/json' }
+            });
+
+            if (response.ok) {
+              status.textContent = 'Thank you - you are on the list.';
+              form.reset();
+            } else {
+              status.textContent = 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            status.textContent = 'Network error. Please try again.';
+          } finally {
+            button.disabled = false;
+            button.classList.remove('opacity-70', 'cursor-not-allowed');
+          }
+        });
+      });
+    </script>
 
 </body></html>

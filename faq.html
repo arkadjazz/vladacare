@@ -376,6 +376,16 @@
             <p class="text-gray-400 mb-6 sm:mb-8 leading-relaxed font-light mindful-spacing text-sm sm:text-base">
               Certified Trauma Specialist providing compassionate, trauma-informed experiential support for lasting transformation.
             </p>
+            <form class="newsletter-form max-w-md mb-6 sm:mb-8" action="https://formspree.io/f/xeevwglb" method="POST">
+              <input type="hidden" name="_subject" value="VladaCare newsletter signup">
+              <input type="hidden" name="source" value="FAQ footer">
+              <label class="block text-sm text-gray-300 mb-3">Sign up for occasional reflections.</label>
+              <div class="flex flex-col sm:flex-row gap-3">
+                <input name="email" type="email" required autocomplete="email" placeholder="Email address" class="w-full rounded-full bg-white/10 border border-white/10 px-5 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-brand/50 focus:border-primary-brand/40 transition">
+                <button type="submit" class="px-6 py-3 bg-primary-brand text-white rounded-full font-light tracking-wide hover:bg-opacity-90 transition-all duration-300 whitespace-nowrap">Sign Up</button>
+              </div>
+              <p class="newsletter-status hidden text-sm text-gray-400 mt-3"></p>
+            </form>
             <div class="flex space-x-4">
               <a href="https://www.linkedin.com/in/vlada-zapesotsky-48237a1/" class="w-10 h-10 sm:w-12 sm:h-12 bg-gray-800/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-primary-brand transition-all duration-300 hover:scale-110">
                 <i class="fa-brands fa-linkedin text-base sm:text-lg"></i>
@@ -414,5 +424,39 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.querySelectorAll('.newsletter-form').forEach(function(form) {
+        form.addEventListener('submit', async function(event) {
+          event.preventDefault();
+          const status = form.querySelector('.newsletter-status');
+          const button = form.querySelector('button[type="submit"]');
+          status.classList.remove('hidden');
+          status.textContent = 'Sending...';
+          button.disabled = true;
+          button.classList.add('opacity-70', 'cursor-not-allowed');
+
+          try {
+            const response = await fetch(form.action, {
+              method: 'POST',
+              body: new FormData(form),
+              headers: { Accept: 'application/json' }
+            });
+
+            if (response.ok) {
+              status.textContent = 'Thank you - you are on the list.';
+              form.reset();
+            } else {
+              status.textContent = 'Something went wrong. Please try again.';
+            }
+          } catch (error) {
+            status.textContent = 'Network error. Please try again.';
+          } finally {
+            button.disabled = false;
+            button.classList.remove('opacity-70', 'cursor-not-allowed');
+          }
+        });
+      });
+    </script>
 
 </body></html>
